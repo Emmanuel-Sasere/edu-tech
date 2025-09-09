@@ -95,13 +95,15 @@ const VideoLearningPlatform = () => {
       {/* Header */}
       <header className="sticky top-0 bg-white border-b border-gray-200 shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-          <div className="flex items-start justify-center gap-0">
+        <a href='https://www.ustackschool.com/' target='_blank' rel='noreferrer'>
+           <div className="flex items-start justify-center gap-0">
             <div className="rounded-md">
               {/* <BookOpen className="w-6 h-6 text-white" /> */}
                <img src={logo} alt="UstackSchool Logo" className="w-8 h-8 object-contain" />
             </div>
             <h1 className="text-3xl font-normal ml-[-7px] text-end text-black">stack<span className='font-semibold'>school</span></h1>
           </div>
+        </a>
           <button
             onClick={() => setShowForm(true)}
             className="flex items-center gap-2 bg-[#6521FF] hover:bg-[#5915fa] text-white px-4 py-2 rounded-md text-sm font-medium transition cursor-pointer"
@@ -196,7 +198,7 @@ const VideoLearningPlatform = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="Video name"
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border-gray-300 border  rounded-md focus:ring-2 focus:ring-blue-500"
                 required
               />
               <textarea
@@ -205,7 +207,7 @@ const VideoLearningPlatform = () => {
                 onChange={handleInputChange}
                 placeholder="Video description"
                 rows="3"
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border-gray-300 border rounded-md focus:ring-2 focus:ring-[#6521FF]"
                 required
               />
               <input
@@ -214,7 +216,7 @@ const VideoLearningPlatform = () => {
                 value={formData.url}
                 onChange={handleInputChange}
                 placeholder="YouTube URL"
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border-gray-300 border  rounded-md focus:ring-2 focus:ring-[#6521FF]"
                 required
               />
               <div className="flex gap-3 pt-2">
